@@ -16,14 +16,16 @@
       max-height: 400px;
     }
 
-    a:hover {
-      background-color: #f8f9fa;
-      border-color: #adb5bd;
+    button {
+      background-color: #fff;
+      border: 1px solid #d7dbcc;
+      color: #000000;
+      font-weight: bold;
     }
 
     button:hover {
       background-color: #f8f9fa;
-      border-color: #adb5bd;
+      border-color: #c4c7bc;
     }
 
     hr.shortie {
@@ -42,7 +44,7 @@
   </style>
 </head>
 
-<body>
+<body style="background-color: #f7f7f7; padding-left: 1em; padding-right: 1em;">
   <div class="container">
     <!-- Image Row -->
     <div class="row p-1">
@@ -54,7 +56,7 @@
     <!-- Paragraphs Row -->
     <div class="row text-center p-1">
       <div class="col-12">
-        <p class="p-1 fs-5">
+        <p>
           거리가 멀어 본식에 참석이 어려우신 분들을 위해 별도의 피로연 자리를 마련했습니다.
           <br><br>
           귀한 발걸음으로 두 사람의 행복한 앞날을 함께 축복해 주시면 정말 감사하겠습니다.
@@ -72,8 +74,8 @@
     <!-- Date and Restaurant Row -->
     <div class="row text-center p-1">
       <div class="col-12 p-1">
-        <h4>2025.05.31 (토) 오전 11시 30분</h4>
-        <h4>쌍교숯불갈비 광양점</h4>
+        <h5 style="font-weight: 600;">2025.05.31 (토) 오전 11시 30분</h5>
+        <h5 style="font-weight: 600;">쌍교숯불갈비 광양점</h5>
       </div>
     </div>
 
@@ -86,22 +88,40 @@
       <!-- Button -->
       <div class="col-12 text-center p-1">
         <a href="https://map.naver.com/p/entry/place/1586412455?c=15.00,0,0,0,dh">
-          <button class="btn btn-outline-dark btn-lg px-5 fw-bold shadow"><span class="text-body">지도보기</span>
-          </button>
+          <button class="button btn-lg px-5 fw-bold shadow">지도보기</button>
         </a>
       </div>
     </div>
 
     <!-- Bride and Groom Row -->
     <div class="row p-1 my-5">
-      <div class="col-12 p-1">
+      <div class="col-12 p-1" style="font-size: 1.25rem;">
         <hr>
-        <!-- <p class="text-center parisienne-large">We are</p> -->
-        <p class="text-center p-1 my-1">혼주
-          <span class="fw-bold"> 신선호 · 김미란</span>
+        <p class="text-center" style="color: #000;">
+          <span class="px-1" style="color: #666;
+      font-size: 1.1rem;">
+            혼주
+          </span>
+          <span class="px-1" style="font-weight: bold;">
+            신선호 · 김미란
+          </span>
+          <br>
+          <span class="px-1" style="color: #666;
+      font-size: 1.1rem;">
+            신랑
+          </span>
+          <span class="px-1" style="font-weight: bold;">
+            Zachary (재커리) ·
+          </span>
+          <span class="px-1" style="color: #666;
+      font-size: 1.1rem;">
+            신부
+          </span>
+          <span class="px-1" style="font-weight: bold;">
+            신다은
+          </span>
         </p>
-        <p class="text-center p-1 my-1">신랑
-          <span class="fw-bold fs-6"> Zachary (재커리) · </span>신부<span class="fw-bold fs-6"> 신다은</span>
+        <!-- <hr> -->
         </p>
         <hr>
       </div>
