@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>피로연 안내</title>
   <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/76c659ad69.js" crossorigin="anonymous"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 
@@ -25,6 +26,14 @@
       border-color: #adb5bd;
     }
 
+    hr.shortie {
+      background-color: rgb(0, 0, 0);
+      width: 15%;
+      height: 3px;
+      border-top: 1px solid black;
+      text-align: center;
+    }
+
     .parisienne-large {
       font-family: 'Parisienne', cursive;
       font-size: 5rem;
@@ -36,87 +45,109 @@
 <body>
   <div class="container">
     <!-- Image Row -->
-    <div class="row p-2">
-      <div class="col-12 text-center p-2">
+    <div class="row p-1">
+      <div class="col-12 text-center p-1">
         <img src="title.png" class="img-fluid mx-auto d-block" alt="Top Image">
       </div>
     </div>
 
     <!-- Paragraphs Row -->
-    <div class="row text-center p-2">
-      <div class="col-12 p-2">
-        <p>
+    <div class="row text-center p-1">
+      <div class="col-12">
+        <p class="p-1 fs-5">
           거리가 멀어 본식에 참석이 어려우신 분들을 위해 별도의 피로연 자리를 마련했습니다.
-        </p>
-        <hr>
-        <p>
+          <br><br>
           귀한 발걸음으로 두 사람의 행복한 앞날을 함께 축복해 주시면 정말 감사하겠습니다.
         </p>
       </div>
     </div>
 
-    <!-- Date and Restaurant Row -->
-    <div class="row mt-4 text-center p-2">
-      <div class="col-12 p-2">
-        <h5>2025.05.31 (토) 오전 11시 30분</h5>
-        <h6>쌍교숯불갈비 광양점</h6>
+    <!-- Short Horizontal Line Row -->
+    <div class="row">
+      <div class="col-12 justify-content-center align-items-center text-center">
+        <hr class="shortie mx-auto">
       </div>
     </div>
 
-    <!-- Map and Button Row -->
-    <div class="row mt-4 p-2">
-      <div class="col-12 text-center p-2">
+    <!-- Date and Restaurant Row -->
+    <div class="row text-center p-1">
+      <div class="col-12 p-1">
+        <h4>2025.05.31 (토) 오전 11시 30분</h4>
+        <h4>쌍교숯불갈비 광양점</h4>
+      </div>
+    </div>
+
+    <!-- Map -->
+    <div class="row p-1">
+      <div class="col-12 text-center p-1">
         <img src="map.png" class="img-fluid" alt="Map">
       </div>
 
-      <div class="col-12 text-center p-2">
+      <!-- Button -->
+      <div class="col-12 text-center p-1">
         <a href="https://map.naver.com/p/entry/place/1586412455?c=15.00,0,0,0,dh">
-          <button class="btn btn-outline-secondary btn-sm p-2">지도보기
+          <button class="btn btn-outline-dark btn-lg px-5 fw-bold shadow"><span class="text-body">지도보기</span>
           </button>
         </a>
       </div>
     </div>
 
     <!-- Bride and Groom Row -->
-    <div class="row mt-4 p-2">
-      <div class="col-12 p-2">
+    <div class="row p-1 my-5">
+      <div class="col-12 p-1">
         <hr>
-        <p class="text-center parisienne-large">We are</p>
-        <p class="text-center">혼주 신선호 · 김미란</p>
-        <p class="text-center">신랑 Zachary · 신부 신다은</p>
+        <!-- <p class="text-center parisienne-large">We are</p> -->
+        <p class="text-center p-1 my-1">혼주
+          <span class="fw-bold"> 신선호 · 김미란</span>
+        </p>
+        <p class="text-center p-1 my-1">신랑
+          <span class="fw-bold fs-6"> Zachary (재커리) · </span>신부<span class="fw-bold fs-6"> 신다은</span>
+        </p>
         <hr>
       </div>
     </div>
 
     <!-- Bank Account Row -->
-    <div class="row mt-4 p-2">
-
-      <div class="col-12 text-center p-2">
-        <h5>마음 전하실 곳</h5>
-        <div class="d-inline-block text-start mt-3 p-2 border rounded" style="max-width: 300px;">
+    <div class="row p-1 my-3">
+      <div class="col-12 text-center p-1">
+        <h3 class="fw-bold">마음 전하실 곳</h3>
+        <div class="d-inline-block text-start mt-3 p-1 border rounded" style="max-width: 300px;">
           <div class="d-flex justify-content-between align-items-center mb-3">
-            <p class="mb-0 p-2">신선호 농협 62802092973</p>
-            <button class="btn btn-outline-secondary btn-sm p-2"
-              onclick="navigator.clipboard.writeText('62802092973')">복사</button>
+            <p class="mb-0 p-1">
+              <span class="p-1 fw-bold">신선호</span>
+              <span class="p-1">
+                농협
+              </span>
+              <span class="p-1">62802092973</span>
+            </p>
+            <button class="btn btn-outline-secondary btn-sm p-1"
+              onclick="navigator.clipboard.writeText('62802092973')"><i class="fa-solid fa-copy px-1"></i>복사</button>
           </div>
+          <hr>
           <div class="d-flex justify-content-between align-items-center">
-            <p class="mb-0 p-2">김미란 농협 3022301996331</p>
-            <button class="btn btn-outline-secondary btn-sm p-2"
-              onclick="navigator.clipboard.writeText('3022301996331')">복사</button>
+            <p class="mb-0 p-1">
+              <span class="p-1 fw-bold">김미란</span>
+              <span class="p-1">
+                농협
+              </span>
+              <span class="p-1">3022301996331</span>
+            </p>
+            <button class="btn btn-outline-secondary btn-sm p-1"
+              onclick="navigator.clipboard.writeText('3022301996331')"><i class="fa-solid fa-copy px-1"></i>복사</button>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="row p-2">
-      <div class="col-12 text-center p-2">
+    <div class="row p-1">
+      <div class="col-12 text-center p-1">
         <img src="thanks.png" class="img-fluid mx-auto d-block" alt="Top Image">
       </div>
     </div>
 
     <!-- Footer Row -->
-    <div class="row text-center p-2 text-light">
-      <div class="col-12 p-2" style="background-color: #45663D;">
+    <div class="row text-center p-1 text-light">
+      <div class="col-12 p-1" style="background-color: #45663D;">
         <p>
           모든 분들께 감사합니다. 예쁘게 잘 살겠습니다!
         </p>
